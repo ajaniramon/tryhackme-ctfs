@@ -1,0 +1,16 @@
+
+POST /Account/login.aspx?ReturnURL=%2fadmin%2f HTTP/1.1
+Host: 10.10.146.142
+Content-Length: 569
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+Origin: http://10.10.146.142
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Referer: http://10.10.146.142/Account/login.aspx?ReturnURL=/admin/
+Accept-Encoding: gzip, deflate
+Accept-Language: es-ES,es;q=0.9
+Connection: close
+
+__VIEWSTATE=fL2tVePaQj2Bd3yhP1Qk9latiwIWDWnmeUFI8PtMVR5gr%2F1V4bvoOons45qp6htzIzTkaeWDOTjzcGQESaMDqQ6sGcW5ALgtcoSI2hSGNhIA1%2FiNamYc4Trh06FVDrcB8mJluyZ7zLrLwhYkTh8YXwp0kVl8sx%2Fz09DWvfTMiijwtsJO&__EVENTVALIDATION=0fEbnWaJiLKupaIpmuCSVPWoeRsXc2Cug9TGKwz7aK0xT%2FHQzApBSH1p7%2Faq4%2FYnVt408khIpV0Z0T%2BKSpepvkGqEh2laoN2m5ElUU9qXkUUvbOEKnsElaIbLgjglRMUJKb5d9w8QmbVpx1Gzas4QfrR%2FABP6AXUzBMN9TOOUdDCUjh2&ctl00%24MainContent%24LoginUser%24UserName=admin&ctl00%24MainContent%24LoginUser%24Password=sdfiojsadif&ctl00%24MainContent%24LoginUser%24LoginButton=Iniciar+sesi%C3%B3n

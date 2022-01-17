@@ -1,0 +1,63 @@
+Delegation Tokens Available
+========================================
+\
+BUILTIN\Administrators
+BUILTIN\IIS_IUSRS
+BUILTIN\Users
+NT AUTHORITY\Authenticated Users
+NT AUTHORITY\NTLM Authentication
+NT AUTHORITY\SERVICE
+NT AUTHORITY\This Organization
+NT AUTHORITY\WRITE RESTRICTED
+NT SERVICE\AppHostSvc
+NT SERVICE\AudioEndpointBuilder
+NT SERVICE\BFE
+NT SERVICE\CertPropSvc
+NT SERVICE\CscService
+NT SERVICE\Dnscache
+NT SERVICE\eventlog
+NT SERVICE\EventSystem
+NT SERVICE\FDResPub
+NT SERVICE\iphlpsvc
+NT SERVICE\LanmanServer
+NT SERVICE\MMCSS
+NT SERVICE\PcaSvc
+NT SERVICE\PlugPlay
+NT SERVICE\RpcEptMapper
+NT SERVICE\Schedule
+NT SERVICE\SENS
+NT SERVICE\SessionEnv
+NT SERVICE\Spooler
+NT SERVICE\sppsvc
+NT SERVICE\swprv
+NT SERVICE\TrkWks
+NT SERVICE\TrustedInstaller
+NT SERVICE\UmRdpService
+NT SERVICE\UxSms
+NT SERVICE\WdiSystemHost
+NT SERVICE\Winmgmt
+NT SERVICE\WSearch
+NT SERVICE\wuauserv
+
+Impersonation Tokens Available
+========================================
+NT AUTHORITY\NETWORK
+NT SERVICE\AudioSrv
+NT SERVICE\CryptSvc
+NT SERVICE\DcomLaunch
+NT SERVICE\Dhcp
+NT SERVICE\DPS
+NT SERVICE\LanmanWorkstation
+NT SERVICE\lmhosts
+NT SERVICE\MpsSvc
+NT SERVICE\netprofm
+NT SERVICE\NlaSvc
+NT SERVICE\nsi
+NT SERVICE\PolicyAgent
+NT SERVICE\Power
+NT SERVICE\ShellHWDetection
+NT SERVICE\TermService
+NT SERVICE\W32Time
+NT SERVICE\WdiServiceHost
+NT SERVICE\WinHttpAutoProxySvc
+NT SERVICE\wscsvc

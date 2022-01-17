@@ -1,0 +1,107 @@
+
+            ((,.,/((((((((((((((((((((/,  */
+     ,/*,..*(((((((((((((((((((((((((((((((((,
+   ,*/((((((((((((((((((/,  .*//((//**, .*((((((*
+   ((((((((((((((((* *****,,,/########## .(* ,((((((
+   (((((((((((/* ******************/####### .(. ((((((
+   ((((((..******************/@@@@@/***/###### /((((((
+   ,,..**********************@@@@@@@@@@(***,#### ../(((((
+   , ,**********************#@@@@@#@@@@*********##((/ /((((
+   ..(((##########*********/#@@@@@@@@@/*************,,..((((
+   .(((################(/******/@@@@@#****************.. /((
+
+ [+] SERVICE BINARY PERMISSIONS WITH WMIC and ICACLS
+   [?] https://book.hacktricks.xyz/windows/windows-local-privilege-escalation#services
+C:\Program Files\Amazon\EC2Launch\EC2Launch.exe NT AUTHORITY\SYSTEM:(I)(F)
+
+C:\Program Files\Amazon\SSM\amazon-ssm-agent.exe NT AUTHORITY\SYSTEM:(I)(F)
+
+C:\Windows\Microsoft.NET\Framework64\v4.0.30319\aspnet_state.exe NT SERVICE\TrustedInstaller:(F)
+
+C:\Program Files\Amazon\XenTools\LiteAgent.exe NT AUTHORITY\SYSTEM:(I)(F)
+
+C:\Program Files\Amazon\Ec2ConfigService\Ec2Config.exe NT AUTHORITY\SYSTEM:(I)(F)
+
+C:\Windows\Microsoft.NET\Framework64\v4.0.30319\SMSvcHost.exe NT SERVICE\TrustedInstaller:(F)
+
+C:\Windows\SysWow64\perfhost.exe NT SERVICE\TrustedInstaller:(F)
+
+C:\Windows\PSSDNSVC.EXE NT AUTHORITY\SYSTEM:(I)(F)
+
+C:\Windows\servicing\TrustedInstaller.exe NT SERVICE\TrustedInstaller:(F)
+
+C:\PROGRA~2\SYSTEM~1\WService.exe Everyone:(I)(M)
+
+
+ [+] CHECK IF YOU CAN MODIFY ANY SERVICE REGISTRY
+   [?] https://book.hacktricks.xyz/windows/windows-local-privilege-escalation#services
+
+---
+Scan complete.
+
+ [+] UNQUOTED SERVICE PATHS
+   [i] When the path is not quoted (ex: C:\Program files\soft\new folder\exec.exe) Windows will try to execute first 'C:\Program.exe', then 'C:\Program Files\soft\new.exe' and finally 'C:\Program Files\soft\new folder\exec.exe'. Try to create 'C:\Program Files\soft\new.exe'
+   [i] The permissions are also checked and filtered using icacls
+   [?] https://book.hacktricks.xyz/windows/windows-local-privilege-escalation#services
+aspnet_state 
+ C:\Windows\Microsoft.NET\Framework64\v4.0.30319\aspnet_state.exe 
+C:\Windows\Microsoft.NET\Framework64\v4.0.30319\aspnet_state.exe NT SERVICE\TrustedInstaller:(F)
+
+AWSLiteAgent 
+ C:\Program Files\Amazon\XenTools\LiteAgent.exe 
+Invalid parameter "Files\Amazon\XenTools\LiteAgent.exe"
+NetTcpPortSharing 
+ C:\Windows\Microsoft.NET\Framework64\v4.0.30319\SMSvcHost.exe 
+C:\Windows\Microsoft.NET\Framework64\v4.0.30319\SMSvcHost.exe NT SERVICE\TrustedInstaller:(F)
+
+PerfHost 
+ C:\Windows\SysWow64\perfhost.exe 
+C:\Windows\SysWow64\perfhost.exe NT SERVICE\TrustedInstaller:(F)
+
+PsShutdownSvc 
+ C:\Windows\PSSDNSVC.EXE 
+C:\Windows\PSSDNSVC.EXE NT AUTHORITY\SYSTEM:(I)(F)
+
+TrustedInstaller 
+ C:\Windows\servicing\TrustedInstaller.exe 
+C:\Windows\servicing\TrustedInstaller.exe NT SERVICE\TrustedInstaller:(F)
+
+WindowsScheduler 
+ C:\PROGRA~2\SYSTEM~1\WService.exe 
+C:\PROGRA~2\SYSTEM~1\WService.exe Everyone:(I)(M)
+
+
+[*] DLL HIJACKING in PATHenv variable
+   [i] Maybe you can take advantage of modifying/creating some binary in some of the following locations
+   [i] PATH variable entries permissions - place binary or DLL to execute instead of legitimate
+   [?] https://book.hacktricks.xyz/windows/windows-local-privilege-escalation#dll-hijacking
+C:\Windows\system32 NT SERVICE\TrustedInstaller:(F)
+ 
+C:\Windows NT SERVICE\TrustedInstaller:(F)
+ 
+C:\Windows\System32\Wbem NT SERVICE\TrustedInstaller:(F)
+ 
+
+[*] CREDENTIALS
+
+ [+] WINDOWS VAULT
+   [?] https://book.hacktricks.xyz/windows/windows-local-privilege-escalation#windows-vault
+
+Currently stored credentials:
+
+* NONE *
+
+
+ [+] Unattended files
+
+ [+] SAM and SYSTEM backups
+
+ [+] McAffee SiteList.xml
+ Volume in drive C has no label.
+ Volume Serial Number is 0E97-C552
+ Volume in drive C has no label.
+ Volume Serial Number is 0E97-C552
+ Volume in drive C has no label.
+ Volume Serial Number is 0E97-C552
+ Volume in drive C has no label.
+ Volume Serial Number is 0E97-C552
