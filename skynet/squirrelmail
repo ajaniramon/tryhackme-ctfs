@@ -1,0 +1,16 @@
+POST /squirrelmail/src/redirect.php HTTP/1.1
+Host: 10.10.71.180
+Content-Length: 86
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+Origin: http://10.10.71.180
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Referer: http://10.10.71.180/squirrelmail/src/login.php
+Accept-Encoding: gzip, deflate
+Accept-Language: es-ES,es;q=0.9
+Cookie: squirrelmail_language=en_US; SQMSESSID=tc5pj54j3f8tbu2lcbe5mjj641
+Connection: close
+
+login_username=milesdyson&secretkey=yugyugyug&js_autodetect_results=1&just_logged_in=1
