@@ -73,5 +73,6 @@ Nos vamos a esa ubicación y creamos una reverse shell nueva con msfvenom igual 
 Nos bajamos la revshell, la ejecutamos, y gg pwn3d.
 
 User flag: 759bd8af507517bcfaede78a21a73e39
+<br>
 Root flag: 7e13d97f05f7ceb9881a3eb3d78d3e72
 
